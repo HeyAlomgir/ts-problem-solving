@@ -30,9 +30,12 @@ function formatCoordinate(coordinate: readonly [number, number, string]): string
     return `Location: ${locationName} (${latitude}, ${longitude})`;
 }
 
-// --- স্যাম্পল ইনপুট ও আউটপুট টেস্ট ---
-console.log(formatCoordinate([23.81, 90.41, "Dhaka"]));       // আউটপুট: "Location: Dhaka (23.81, 90.41)"
-console.log(formatCoordinate([22.35, 91.78, "Chittagong"])); // আউটপুট: "Location: Chittagong (22.35, 91.78)"
+
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+    return arrays.flat();
+}
+
 
 
 
