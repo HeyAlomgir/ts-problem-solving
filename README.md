@@ -44,13 +44,6 @@ B8A1-Assignment/
 └── tsconfig.json
 ```
 
-## How to Run
-
-প্রথমে Project-এর Dependencies Install করো:
-
-```bash
-npm install
-```
 
 TypeScript Compile Check করার জন্য:
 
