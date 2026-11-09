@@ -21,10 +21,6 @@ function processInput(value: InputType): string | number {
 }
 
 
-
-
-
-
 function formatCoordinate(coordinate: readonly [number, number, string]): string {
     const [latitude, longitude, locationName] = coordinate;
     return `Location: ${locationName} (${latitude}, ${longitude})`;
@@ -47,11 +43,11 @@ const getPopularCourses = (courses: Course[], minStudents: number): Course[] => 
     return courses.filter(course => course.isPublished === true && course.students >= minStudents);
 }
 
-const courses: Course[] = [
-    { title: "TypeScript Mastery", students: 120, isPublished: true },
-    { title: "Draft Course", students: 200, isPublished: false },
-    { title: "Basic HTML", students: 45, isPublished: true },
-    { title: "Next.js Pro", students: 85, isPublished: true }
-];
+
+
+
+const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
+    return items.map(item => item[key]);
+}
 
 
