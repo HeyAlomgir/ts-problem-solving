@@ -20,8 +20,4 @@ function processInput(value: InputType): string | number {
     }
 }
 
-
-console.log(processInput("  TypeScript  ")); 
-console.log(processInput(7));               
-console.log(processInput(true));            
-console.log(processInput(false));          
+       
